@@ -59,14 +59,57 @@
         <section>
          <h2 class="visually-hidden">Фильтр товаров</h2>
          <form method="get" action="https://echo.htmlacademy.ru">
-            <p><select name="list1">
-               <option value="1">Option</option>
-               <option value="2">Textarea</option>
-               <option value="3">Label</option></p>
-        </form>
+            <p>
+               <legend>Сортировка:</legend>
+               <select name="list1" autofocus>
+               <option value="1">по популярности</option>
+               <option value="2"></option>
+               <option value="3">Label</option>
+            </p>
+          <p>
+            <legend>Цена:100 руб.-500 руб.</legend>
+            <input type="range" name="price">
+          </p>
+            <fieldset>
+             <legend>Жирность:</legend>
+               <ul>
+                 <li>
+                   <input type="radio" name="0" id="0" >
+                   <label for="0">0%</label>
+                </li>
+                <li>
+                  <input type="radio" name="10" id="10" checked>
+                  <label for="10">до 10%</label>
+               </li>
+               <li>
+                 <input type="radio" name="up-to-30" id="30" >
+                 <label for="up-to-30">до 30%</label>
+              </li>
+              <li>
+                <input type="radio" name="above-30" id="above-30" >">
+                <label for="above-30">выше 30%</label>
+             </li>
+           </ul>
+         </fieldset>
+           <fieldset>
+             <legend>Наполнители:</legend>
+              <ul>
+                <li><input type="checkbox" name="chocolate" id="chocolate" checked>
+                 <label for="chocolate">шоколадные</label></li>
+                <li><input type="checkbox" name="sugar" id="sugar" checked>
+                  <label for="sugar">сахарные присыпки</label></li>
+                <li><input type="fruits" name="fruits" id="fruits">
+                  <label for="fruits">фрукты</label></li>
+                <li><input type="syrups" name="syrups" id="syrups">
+                   <label for="syrups">сиропы</label></li>
+                <li><input type="jams" name="jams" id="jams">
+                   <label for="jams">джемы</label></li>
+              </ul>
+           </fieldset>
+         </form>
        </section>
        <section>
-        <h2>Список сливочного мороженого</h2>
+        <h2 class="visually-hidden">Список сливочного мороженого</h2>
     <ul>
       <li>
         <img src="img/catalog/1.png" width="267" height="267">
