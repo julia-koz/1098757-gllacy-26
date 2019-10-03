@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-  </head>
+    <link href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
   <body>
     <header>
-       <nav>
+       <nav class="main-navigation">
          <a>
          <img src="logo.svg" width="70" height="46" alt="Логотип магазина Глэйси">
        </a>
-        <ul>
+       <ul class="site-navigation">
            <li><a href="catalog.html">Каталог</a></li>
               <ul>
                 <li>Новинки</li>
@@ -22,7 +24,7 @@
             <li><a href="dostavka.html">Доставка и оплата</a></li>
             <li><a href="company.html">О Компании</a></li>
         </ul>
-         <ul>
+         <ul class="user-navigation">
             <li><button type="button"></button></
                <form>
                   <input id="seach" type="text" name="q" placeholder="Что ищем?">
@@ -63,7 +65,7 @@
              <button type="button"></button>
                  <img src="img/slider3.png"  width="646" height="584">
                     <p>Пломбир с помадкой и клубничный щербет</p>
-                     <button type="button">Давайте оба!</button>  
+                     <button type="button">Давайте оба!</button>
           </figure>
         </div>
       <section>
@@ -79,7 +81,7 @@
            <button type="button">Хочу шоколадки!</button>
        </section>
        <section>
-             <h3>Список сливочного мороженого</h3>
+             <h3 class="visually-hidden">Список сливочного мороженого</h3>
              <ul>
                <li>
                  <img src="img/catalog/1.png" width="267" height="267">
@@ -103,9 +105,9 @@
             </ul>
       </section>
       <section>
-        <h2>Преимущества</h2>
-        <p>Магазин Глэйси-это онлайн- и офлайн-магазин по продаже мороженого
-           собственного производства на развес</p>
+        <h2 class="visually-hidden" class="features-list">Преимущества</h2>
+        <p><b>Магазин Глэйси-это онлайн- и офлайн-магазин по продаже мороженого
+           собственного производства на развес</b></p>
           <ul>
             <li>
               <p>Все наше мороженое изготовляеться на собственном производстве,
@@ -130,11 +132,11 @@
           </ul>
       </section>
        <acticle>
-         <h3>Новости</h3>
+         <h3 class="visually-hidden" class="blog-list">Блог</h3>
           <p>Новое в нашем блоге</p>
-           <a href="news.html">10 способов сервировки фруктовых щербетов к столу </a>
+           <a href="news.html"><b>10 способов сервировки фруктовых щербетов к столу</b></a>
        </article>
-       <div>
+       <div class="mail">
          <p>Подпишись на нашу сладкую рассылку и будете всегда в курсе
             всего самого вкусного,что у нас происходит. Обещаем не спамить
             и не слать всякой ненужной ерунды. Честно:)</p>
@@ -146,7 +148,7 @@
     </main>
    <footer>
        <section>
-         <h2>Контактная информация</h2>
+         <h2 class="visually-hidden" class="location">Контактная информация</h2>
             <p>Адресс главного офиса и офлайн-магазина:<br>
             <b> ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
             </p>
@@ -157,12 +159,12 @@
             <form action="https://echo.htmlacademy.ru" method="post"
           <p>Мы обязательно вам ответим!</p>
           <p>
-            <input id="name" type="text" name="name" value="" placeholder="Как вас зовут?">
+            <input id="name" type="text" name="name"  placeholder="Как вас зовут?">
           </p>
-          <p><input id="post" type="text" name="post" value="" placeholder="Ваша почта для ответа?">
+          <p><input id="post" type="text" name="post"  placeholder="Ваша почта для ответа?">
           </p>
           <p>
-            <input id="write" type="text" name="write" value="" placeholder="Напишите что-нибудь...">
+            <input id="write" type="text" name="write" placeholder="Напишите что-нибудь...">
           </p>
            <button type="submit">Отправить</button>
             </form>

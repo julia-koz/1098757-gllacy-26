@@ -11,7 +11,7 @@ body{
   text-transform: uppercase;
 
   background-color: #8ca698;
-  background-image: url("img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: absolute;
   background-repeat: no-repeat;
 }
@@ -49,7 +49,7 @@ a {
   line-height: 22px;
 
   background-color: #8ca698;
-  background-image: url("img/waffle.bg.jpg");
+  background-image: url("../img/waffle.bg.jpg");
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -59,7 +59,7 @@ a {
     line-height: 22px;
 
     background-color: #8ca698;
-    background-image: url("img/strawberry-bg.jpg");
+    background-image: url("../img/strawberry-bg.jpg");
     background-repeat: no-repeat;
 }
 .mail{
@@ -68,7 +68,7 @@ a {
   line-height: 22px;
 
   background-color: #8ca698;
-  background-image: url("img/substrate.jpg");
+  background-image: url("../img/substrate.jpg");
   background-repeat: no-repeat;
 }
 .location{
@@ -77,6 +77,6 @@ a {
   line-height: 20px;
 
   background-color: #8ca698;
-  background-image: url("img/map.jpg");
+  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
 }
