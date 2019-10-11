@@ -1,125 +1,144 @@
-body{
-  body {
+body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-
   background-color: #8ca698;
   background-image: url("../img/bg.jpg");
-  background-position: absolute;
+  background-position: 100%;
   background-repeat: no-repeat;
 }
+
 a {
   text-decoration: underline;
+  color: #ffffff;
 }
+
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-
   background-color: #8ca698;
 }
-.site-navigation a:hover,
-.site-navigation a:focus,
+
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #ffbc9e;
 }
-li{
-    list-style: none;
-}
-.features{
-    color: #323232;
 
-    background-color: #8ca698;
-    background-image: url("../img/waffle.bg.jpg");
-    background-repeat: no-repeat;
-    position: absolute;
+ul {
+  list-style: none;
 }
-.feature-item {
-  font-size: 16px;
-  line-height: 22px;
 
-  text-align: left;
+.features {
+  color: #323232;
+  background-color: #8ca698;
+  background-image: url("../img/waffle.bg.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
 }
-.features-text{
+.features-text {
   font-size: 24px;
   line-height: 30px;
 }
-.blog-list{
-  color: #323232;
 
+.blog-list {
+  color: #323232;
   background-color: #8ca698;
   background-image: url("../img/strawberry-bg.jpg");
   background-repeat: no-repeat;
 }
-.blog-text{
-  font-size: 16px;
-  line-height: 22px;
-}
-.blog-link{
+.blog-link {
   font-size: 24px;
   line-height: 30px;
 }
-.mail{
+
+.mail {
   color: #323232;
   font-size: 16px;
   line-height: 22px;
-
   background-color: #8ca698;
   background-image: url("../img/svg-gllacy/bg-post.svg");
   background-image: url("../img/substrate.jpg");
   background-repeat: no-repeat;
 }
-.location{
+
+.location {
   color: #323232;
   font-size: 14px;
   line-height: 20px;
-
   background-color: #8ca698;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
 }
+
 button {
   font: inherit;
-
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-
   background-color: #ef6140;
   border-radius: 10px;
 }
+
 button:hover,
-button:focus,{
+button:focus {
   background-color: #f38267;
 }
-.button:active{
-background-color: #dc5539;
-}
-input{
-  font: inherit;
 
-  background-color: transparent;
-  border: 2px solid #000000;
+.button:active {
+  background-color: #dc5539;
 }
-input:hover
-input:focus{
+
+input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #d3d3d3;
+}
+
+input:hover,
+input:focus {
   border: 1px solid #c7c6c5;
 }
-input:active{
-  border: 1px solid #8ffooter {
-  color: #ffffff;
 
-  background-color: #212121;
-  background-image: url("img/pattern-dark.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+input:active {
+  border: 1px solid #8fbdec;
+}
+
+.main-footer {
+  color: #ffffff;
+  background-color: #8ca698;
+}
+
+.menu-footer {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.invisible {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.header-button{
+  background-color: #a1b5aa;
+}
+.header-button:focus,
+.header-button:hover{
+  background-color: #ffffff;
+}
+.site-navigation{
+  font-size: 16px;
+  line-height: 18px;
+}
+.bold-fonts{
+  font-size: 22px;
+  line-height: 24px;
 }
