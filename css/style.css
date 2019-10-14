@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -18,62 +18,8 @@ a {
   color: #ffffff;
 }
 
-.main-navigation {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #8ca698;
-}
-
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #ffbc9e;
-}
-
 ul {
   list-style: none;
-}
-
-.features {
-  color: #323232;
-  background-color: #8ca698;
-  background-image: url("../img/waffle.bg.jpg");
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.features-text {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.blog-list {
-  color: #323232;
-  background-color: #8ca698;
-  background-image: url("../img/strawberry-bg.jpg");
-  background-repeat: no-repeat;
-}
-.blog-link {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.mail {
-  color: #323232;
-  font-size: 16px;
-  line-height: 22px;
-  background-color: #8ca698;
-  background-image: url("../img/svg-gllacy/bg-post.svg");
-  background-image: url("../img/substrate.jpg");
-  background-repeat: no-repeat;
-}
-
-.location {
-  color: #323232;
-  font-size: 14px;
-  line-height: 20px;
-  background-color: #8ca698;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
 }
 
 button {
@@ -110,6 +56,134 @@ input:active {
   border: 1px solid #8fbdec;
 }
 
+.header-button {
+  background-color: #a1b5aa;
+}
+
+.header-button:focus,
+.header-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #ffbc9e;
+}
+
+.schedule {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone-number {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+#slide1:checked~.page-wrapper {
+  background-color: #8ca698;
+  background-image: url("../img/bg.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+#slide2:checked~.page-wrapper {
+  background-color: ;
+}
+
+.slider-input {
+  display: none;
+}
+
+.slide {
+  display: none;
+}
+
+#slide1:checked~.page-wrapper .main-content .main-slider .slide1 {
+  display: block;
+}
+
+#slide2:checked~.page-wrapper .main-content .main-slider .slide2 {
+  display: block;
+}
+
+#slide3:checked~.page-wrapper .main-content .main-slider .slide3 {
+  display: block;
+}
+
+.raspberry {
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #8ca698;
+  background-image: url("../img/raspberry-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.chocolate {
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #8ca698;
+  background-image: url("../img/chocolate-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.bold-fonts {
+  font-size: 35;
+  line-height: 41px;
+}
+
+.features {
+  color: #323232;
+  background-color: #8ca698;
+  background-image: url("../img/waffle.bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.features-text {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.blog-list {
+  color: #323232;
+  background-color: #8ca698;
+  background-image: url("../img/strawberry-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-link {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.mail {
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #8ca698;
+  background-image: url("../img/svg-gllacy/bg-post.svg");
+  background-image: url("../img/substrate.jpg");
+  background-repeat: no-repeat;
+}
+
+.location {
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #8ca698;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+}
+
 .main-footer {
   color: #ffffff;
   background-color: #8ca698;
@@ -127,18 +201,26 @@ input:active {
 .hidden {
   visibility: hidden;
 }
-.header-button{
-  background-color: #a1b5aa;
-}
-.header-button:focus,
-.header-button:hover{
-  background-color: #ffffff;
-}
-.site-navigation{
-  font-size: 16px;
-  line-height: 18px;
-}
-.bold-fonts{
+
+.bold-fonts {
   font-size: 22px;
   line-height: 24px;
+}
+
+.page-number:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.name-filters{
+  font-size: 14px;
+  line-height: 16px;
+}
+.filters{
+  font-size: 16px;
+  line-height: 18px;
 }

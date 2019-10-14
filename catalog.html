@@ -13,7 +13,7 @@
   <header>
     <nav class="main-navigation">
       <a>
-        <img src="img/svg-gllacy/logo.svg" width="70" height="46" alt="Логотип магазина Глэйси">
+          <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
       </a>
       <ul class="site-navigation">
         <li>
@@ -55,8 +55,10 @@
         <li><button type="button" class="header-button"><img src="img/svg-gllacy/basket.svg" style="vertical-align: middle">2 товара</button></li>
       </ul>
     </nav>
-    <p>С 10 до 20, ежедневно <br>
-      <b> 8 812 450-25-25</b></p>
+  <div>
+    <p class="schedule">С 10 до 20, ежедневно</p>
+        <p class="phone-number">8 812 450-25-25</p>
+    </div>
   </header>
   <main>
     <ul>
@@ -66,37 +68,37 @@
     </ul>
     <h2>Сливочное мороженое</h2>
     <section>
-      <h2 class="hidden">Фильтр товаров</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <p>Сортировка:</p>
+      <h2 class="hidden">Фильтры товаров</h2>
+      <form method="get" action="https://echo.htmlacademy.ru" class="filters">
+        <p class="name-filters">Сортировка:</p>
         <select name="list1">
           <option value="1">по популярности</option>
         </select>
-        <p>Цена:100 руб.-500 руб.</p>
+        <p class="name-filters">Цена:100 руб.-500 руб.</p>
         <input type="range" name="price">
-        <fieldset>
-          <legend>Жирность:</legend>
+        <fieldset class="filter">
+          <legend class="name-filters">Жирность:</legend>
           <ul>
             <li>
-              <input type="radio" name="fat-content" id="Fat-content0">
+              <input type="radio" name="fat-content" id="Fat-content0"/>
               <label for="Fat-content0">0%</label>
             </li>
             <li>
-              <input type="radio" name="fat-content" id="Fat-content10" checked>
+              <input type="radio" name="fat-content" id="Fat-content10" checked/>
               <label for="Fat-content10">до 10%</label>
             </li>
             <li>
-              <input type="radio" name="fat-content" id="Fat-content30">
+              <input type="radio" name="fat-content" id="Fat-content30"/>
               <label for="Fat-content30">до 30%</label>
             </li>
             <li>
-              <input type="radio" name="fat-content" id="Fat-content-above-30">
+              <input type="radio" name="fat-content" id="Fat-content-above-30"/>
               <label for="Fat-content-above-30">выше 30%</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Наполнители:</legend>
+        <fieldset class="filter">
+          <legend class="name-filters">Наполнители:</legend>
           <ul>
             <li>
               <input type="checkbox" name="chocolate" id="chocolate" checked>
@@ -120,6 +122,7 @@
             </li>
           </ul>
         </fieldset>
+        <button type="submit" class="header-button">Применить</button>
       </form>
     </section>
     <section>
@@ -186,7 +189,7 @@
           <p><a href="">Сливочное с мятным сиропом</a></p>
         </li>
       </ul>
-      <ul>
+      <ul class="page-number">
         <li><a>1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
