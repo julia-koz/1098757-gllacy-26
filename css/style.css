@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, "Roboto", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -216,11 +216,12 @@ input:active {
   border: none;
 }
 
-.name-filters{
+.name-filters {
   font-size: 14px;
   line-height: 16px;
 }
-.filters{
+
+.filters {
   font-size: 16px;
   line-height: 18px;
 }
