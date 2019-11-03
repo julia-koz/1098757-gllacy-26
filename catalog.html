@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="page-wrapper container">
-    <div class="site-content">
       <header>
         <div class="main-header">
           <nav class="site-navigation">
@@ -20,7 +19,7 @@
             </a>
             <ul class="site-menu">
               <li class="menu-item">
-                <a href="catalog.html" class="menu-item-link">Каталог</a>
+                <a href="catalog.html" class="menu-item-link active">Каталог</a>
                 <ul class="sub-menu">
                   <li>Новинки</li>
                   <li><a href="catalog.html">Сливочное</a></li>
@@ -87,7 +86,13 @@
               </div>
               <div class="price-filter">
                 <p class="name-filters">Цена:100 руб.-500 руб.</p>
-                <input type="range" name="price" class="form-filters">
+                <div class="range-controls form-filters">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
               </div>
               <div class="fat-filter">
                 <fieldset class="filter">
@@ -242,6 +247,7 @@
           </div>
         </section>
       </main>
+      </div>
       <footer>
         <div class="main-footer">
           <div>
@@ -291,8 +297,6 @@
           </p>
         </div>
       </footer>
-    </div>
-  </div>
 </body>
 
 </html>

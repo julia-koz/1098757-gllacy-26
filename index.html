@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-   <div class="site-wrapper container">
-     <div class="site-content">
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
     <header>
-      <div class="main-header">
+      <div class="main-header container">
         <nav class="site-navigation">
           <a class="logo">
             <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
@@ -59,56 +61,49 @@
           </ul>
         </nav>
       </div>
-      <div class="user-information">
+      <div class="user-information container">
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="phone-number">8 812 450-25-25</p>
       </div>
     </header>
     <main class="main-content">
-      <div>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-      <!-- <div class="site-wrapper"> -->
-          <div class="container">
-            <header class="main-header"></header>
-            <section class="slider">
-              <div class="slider-controls">
-                <label for="product-1">Первый</label>
-                <label for="product-2">Второй</label>
-                <label for="product-3">Третий</label>
-              </div>
-              <ul class="slider-list">
-                <li class="slider-item slide" id="slide1">
-                  <h3 class="slide-title">
-                    Крем-брюле и пломбир с малиновым джемом
-                  </h3>
-                  <a class="button slide-button" href="#">Давайте оба!</a>
-                </li>
-                <li class="slider-item slide" id="slide2">
-                  <h3 class="slide-title">
-                    Шоколадный пломбир и лимонный сорбет
-                  </h3>
-                  <a class="button slide-button" href="#">Давайте оба!</a>
-                </li>
-                <li class="slider-item slide" id="slide3">
-                  <h3 class="slide-title">
-                    Пломбир с помадкой и клубничный щербет
-                  </h3>
-                  <a class="button slide-button" href="#">Давайте оба!</a>
-                </li>
-              </ul>
-            </section>
-          </div>
+      <div class="container">
+        <div>
+          <section class="slider">
+            <div class="slider-controls">
+              <label for="product-1">Первый</label>
+              <label for="product-2">Второй</label>
+              <label for="product-3">Третий</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item slide" id="slide1">
+                <h3 class="slide-title">
+                  Крем-брюле и пломбир с малиновым джемом
+                </h3>
+                <a class="button slide-button" href="#">Давайте оба!</a>
+              </li>
+              <li class="slider-item slide" id="slide2">
+                <h3 class="slide-title">
+                  Шоколадный пломбир и лимонный сорбет
+                </h3>
+                <a class="button slide-button" href="#">Давайте оба!</a>
+              </li>
+              <li class="slider-item slide" id="slide3">
+                <h3 class="slide-title">
+                  Пломбир с помадкой и клубничный щербет
+                </h3>
+                <a class="button slide-button" href="#">Давайте оба!</a>
+              </li>
+            </ul>
+          </section>
         </div>
-      <!-- </div> -->
-      <div class="stock">
+      </div>
+      <div class="stock container">
         <div class="raspberry">
           <div class="contant">
             <p class="bold-font">Малинка даром!</p>
-            <p class="raspberry-text">При покупке 2 кг любого фруктового мороженого, добавим <br>
-              в ваш заказ банку малинового варенья бесплатно.</p>
-            <button type="button" class="button-stock-raspberry">Хочу варенье!</button>
+            <p class="raspberry-text">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес.</p>
+            <button type="button" class="button-stock-raspberry button">Хочу варенье!</button>
           </div>
         </div>
         <div class="chocolate">
@@ -116,11 +111,11 @@
             <p class="bold-font">Шоколадки даром!</p>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
               вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <button type="button" class="button-stock-chocalate">Хочу шоколадки!</button>
+            <button type="button" class="button-stock-chocalate button">Хочу шоколадки!</button>
           </div>
         </div>
       </div>
-      <section>
+      <section class="container">
         <h3 class="hidden">Список сливочного мороженого</h3>
         <ul class="ice-cream-list">
           <li class="card">
@@ -153,7 +148,7 @@
           </li>
         </ul>
       </section>
-      <section class="features">
+      <section class="features container">
         <h2 class="hidden">Преимущества</h2>
         <div class="contant">
           <p class="features-text">Магазин Глэйси-это онлайн- и офлайн-магазин по продаже мороженого
@@ -183,7 +178,7 @@
           </ul>
         </div>
       </section>
-      <div class="box">
+      <div class="box container">
         <article class="blog-list">
           <div class="contant">
             <h3 class="hidden">Блог</h3>
@@ -200,26 +195,24 @@
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input class="email" id="email" type="text" name="email-login" placeholder="email@example.com">
               </form>
-              <button type="submit" class="button-email">Отправить</button>
+              <button type="submit" class="button-email button">Отправить</button>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <section class="location">
-        <h2 class="hidden">Контактная информация</h2>
-        <div class="text-location">
-          <p class="adress">
-            Адресс главного офиса <br>
-            и офлайн-магазина:<br>
-            <span class="bold">ул. Большая Конюшенная <br>
-              19/8, Санкт-Петербург</span><br>
-            Для заказов по телефону:<br>
-            <span class="bold-number">8812450-25-25</span><br>
-            (с 10 до 20 ежедневно)
-          </p>
-          <button type="button" class="button-location">Форма обратной связи</button>
+  </div>
+  <footer>
+    <section class="location">
+      <h2 class="hidden">Контактная информация</h2>
+      <div class="container location-content">
+        <div class="location-text">
+          <p class="adress">Адресс главного офиса <br> и офлайн-магазина:</p>
+          <p class="coordinates">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="text-number">Для заказов по телефону:</p>
+          <p class="bold-number">8812450-25-25</p>
+          <p class="adress">(с 10 до 20 ежедневно)</p>
+          <button type="button" class="button-location button">Форма обратной связи</button>
         </div>
         <form class="hidden" action="https://echo.htmlacademy.ru" method="post">
           <p>Мы обязательно вам ответим!</p>
@@ -233,57 +226,56 @@
           </p>
           <button type="submit">Отправить</button>
         </form>
-      </section>
-      <div class="main-footer">
-        <div>
-          <ul class="social-netmork">
-            <li>
-              <a href="#" class="social-item">
-                <img src="img/svg-gllacy/twitter.svg" alt="Твитер">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-item">
-                <img src="img/svg-gllacy/instagram.svg" alt="Инстаграм">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-item">
-                <img src="img/svg-gllacy/fb.svg" alt="Фейсбук">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-item">
-                <img src="img/svg-gllacy/vk.svg" alt="Вконтакте">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="menu-footer">
-            <li>
-              <a href="#" class="footer-item"><b>Для постановщиков</b></a>
-            </li>
-            <li>
-              <a href="#" class="footer-item">О производстве</a>
-            </li>
-            <li>
-              <a href="#" class="footer-item">Наши документы</a>
-            </li>
-            <li>
-              <a href="#" class="footer-item">Экологические стандарты</a>
-            </li>
-          </ul>
-        </div>
-        <p class="produce">
-          Сделано в
-          <a href="https://htmlacademy.ru" class="link-produce">HTML Academy</a>
-          <time datetime="2019">2019</time>
-        </p>
       </div>
-    </footer>
-</div>
-  </div>
+    </section>
+    <div class="main-footer">
+      <div>
+        <ul class="social-netmork">
+          <li>
+            <a href="#" class="social-item">
+              <img src="img/svg-gllacy/twitter.svg" alt="Твитер">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-item">
+              <img src="img/svg-gllacy/instagram.svg" alt="Инстаграм">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-item">
+              <img src="img/svg-gllacy/fb.svg" alt="Фейсбук">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-item">
+              <img src="img/svg-gllacy/vk.svg" alt="Вконтакте">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="menu-footer">
+          <li>
+            <a href="#" class="footer-item"><b>Для постановщиков</b></a>
+          </li>
+          <li>
+            <a href="#" class="footer-item">О производстве</a>
+          </li>
+          <li>
+            <a href="#" class="footer-item">Наши документы</a>
+          </li>
+          <li>
+            <a href="#" class="footer-item">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <p class="produce">
+        Сделано в
+        <a href="https://htmlacademy.ru" class="link-produce">HTML Academy</a>
+        <time datetime="2019">2019</time>
+      </p>
+    </div>
+  </footer>s
 </body>
 
 </html>

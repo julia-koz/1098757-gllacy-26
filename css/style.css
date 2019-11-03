@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -52,19 +52,15 @@ input:active {
   border: 1px solid #8fbdec;
 }
 
-.page-wrapper {
+/* .page-wrapper {
   background-color: #849d8f;
-}
-
+} */
 .container {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
-}
-
-.site-content {
-  margin-left: 27px;
-  margin-right: 27px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .main-header {
@@ -79,7 +75,6 @@ input:active {
   display: flex;
   flex-direction: row;
   margin-top: 8px;
-  /* margin-right: auto; */
 }
 
 .site-menu {
@@ -98,6 +93,15 @@ input:active {
 
 .menu-item-link {
   white-space: nowrap;
+}
+
+.active {
+  background-color: rgb(208, 112, 88);
+  border-radius: 16px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .user-navigation {
@@ -260,7 +264,7 @@ input:active {
   font-weight: 800;
 }
 
-.button {
+.slide-button {
   display: inline-block;
   padding: 12px 44px;
   font-weight: 600;
@@ -309,7 +313,7 @@ input:active {
   cursor: pointer;
 }
 
-#product-1:checked~.site-wrapper, page-wrapper {
+#product-1:checked~.site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider1.png");
 }
@@ -354,7 +358,8 @@ input:active {
   background-repeat: no-repeat;
   width: 560px;
 }
-.raspberry-text{
+
+.raspberry-text {
   font-size: 18px;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -456,6 +461,7 @@ input:active {
   margin-top: 40px;
   color: #323232;
   background-image: url("../img/waffle.bg.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -567,52 +573,82 @@ input:active {
   line-height: 20px;
   background-color: #8ca698;
   background-image: url("../img/map.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 432px;
+  min-height: 432px;
 }
 
-.text-location {
+.location-content {
   margin-top: 64px;
-  margin-left: 873px;
+  margin-left: 1000px;
   margin-right: 30px;
   margin-bottom: 64px;
-  padding: 25px;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   border-radius: 15px;
   background-color: #ffffff;
-  width: 302px;
+  width: 250px;
   /* height: 305px; */
 }
 
+.location-text {
+  width: 230px;
+}
+
 .adress {
-  margin: 0;
-  /* width: 147px;
-  height: 34px; */
   color: #323232;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px
+  line-height: 20px;
+  margin: 0;
 }
 
-.bold {
+.coordinates {
+  color: #323232;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.text-number {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.bold-number {
+  olor: #323232;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+/* .bold {
   color: #323232;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   padding-top: 9px;
   padding-bottom: 26px;
-}
-
+} */
+/*
 .bold-number {
   color: #323232;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   padding-bottom: 26px;
-}
-
+} */
 .button-location {
   margin-top: 26px;
+  margin-bottom: 26px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: 0;
   border-radius: 35px;
@@ -676,6 +712,7 @@ input:active {
 .page-title {
   margin-left: 27px;
   margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .filters fieldset {
@@ -684,10 +721,12 @@ input:active {
 
 .name-filters {
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 16px;
   text-align: left;
   z-index: 148;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .filters {
@@ -700,6 +739,51 @@ input:active {
   line-height: 18px;
   margin-left: 27px;
   width: 880px;
+}
+
+.range-controls {
+  position: relative;
+  margin-top: 20px;
+  /* width: 221px; */
+  height: 18px;
+}
+
+.range-controls .scale {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 10px;
+    width: 180px;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 4px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: 10px;
+    left: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .sorting-filter {
@@ -737,10 +821,11 @@ input:active {
   border: 0;
   white-space: nowrap;
   z-index: 145;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 
 .filter-button {
@@ -751,7 +836,7 @@ input:active {
   width: 145px;
   height: 39px;
   text-align: center;
-  margin-top: 38px;
+  margin-top: 18px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 255, 255);
